@@ -23,8 +23,12 @@ public class Maintenance {
     @Column(nullable = false)
     private LocalDate dateDebut;
 
+    @Column(nullable = false)
     private LocalDate dateFin;
 
     @Column(length = 255)
     private String description;
+
+    @ManyToOne
+    private Vehicule vehicule;
 }
