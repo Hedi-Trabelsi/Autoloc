@@ -5,19 +5,46 @@ import org.springframework.web.bind.annotation.*;
 import tn.esprit.autoloc.domain.Employe;
 import tn.esprit.autoloc.service.IEmployeService;
 
+import java.util.List;
+
 @RestController
 @AllArgsConstructor
 @RequestMapping("/employes")
 public class EmployeController {
     private final IEmployeService employeService;
 
-    @PutMapping("/desaffecterEmploye/{idEmploye}")
-    public Employe desaffecterEmploye(@PathVariable Long idEmploye) {
-        return employeService.desaffecterAgence(idEmploye);
+    @PostMapping("/ajouterEmploye")
+    public Employe ajouterEmploye(@RequestBody Employe employe) {
+        return employeService.ajouterEmploye(employe);
     }
 
-    @PutMapping("/affecterAgence/{idEmploye}/{idAgence}")
-    public Employe affecterAgence(@PathVariable Long idEmploye, @PathVariable Long idAgence) {
-        return employeService.affectAgence(idEmploye, idAgence);
+    @PutMapping("/modifierEmploye")
+    public Employe modifierEmploye(@RequestBody Employe employe) {
+        return employeService.modifierEmploye(employe);
+    }
+
+    @GetMapping("/getAllEmployes")
+    public List<Employe> getAllEmployes() {
+        return employeService.getAllEmployes();
+    }
+
+    @GetMapping("/recupererEmploye/{id}")
+    public Employe getEmployeById(@PathVariable Long id) {
+        return employeService.getEmployeById(id);
+    }
+
+    @DeleteMapping("/deleteEmployeById/{id}")
+    public void supprimerEmploye(@PathVariable Long id) {
+        employeService.supprimerEmployeByID(id);
+    }
+
+    @PutMapping("/desaffecterEmploye/{idEmploye}")
+    public Employe desaffecterEmploye(@PathVariable Long idEmploye) {
+        return employeService.desaffecterEmploye(idEmploye);
+    }
+
+    @PutMapping("/affecterEmploye/{idEmploye}/{idAgence}")
+    public Employe affecterEmploye(@PathVariable Long idEmploye, @PathVariable Long idAgence) {
+        return employeService.affecterEmploye(idEmploye, idAgence);
     }
 }

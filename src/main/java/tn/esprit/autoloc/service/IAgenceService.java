@@ -10,4 +10,5 @@ public interface IAgenceService {
     public Agence getAgenceById(Long id);
     public void supprimerAgence(Long id);
     List<Agence> getAllAgences();
+    public Agence ajouterAgenceEtAffecterVehicules(Agence agence);
 }

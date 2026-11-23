@@ -28,6 +28,11 @@ public class AgenceController {
         return agenceService.getAllAgences();
     }
 
+    @PostMapping("/ajouterAgenceEtAffecterVehicules")
+    public Agence ajouterAgenceEtAffecterVehicules(@RequestBody Agence agence) {
+        return agenceService.ajouterAgenceEtAffecterVehicules(agence);
+    }
+
     @GetMapping("/recupererAgence/{id}")
     public Agence getAgenceById(@PathVariable Long id) {
         return agenceService.getAgenceById(id);

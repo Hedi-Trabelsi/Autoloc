@@ -10,4 +10,6 @@ public interface IVehiculeService {
     public Vehicule getVehiculeById(Long id);
     public void supprimerVehicule(Long id);
     List<Vehicule> getAllVehicules();
+    public Vehicule affecterEquipement(Long idVehicule, Long idEquipement);
+    public Vehicule desaffecterEquipement(Long idVehicule, Long idEquipement);
 }

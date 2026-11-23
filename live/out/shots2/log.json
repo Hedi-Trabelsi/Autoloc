@@ -1,0 +1,38 @@
+[
+  {
+    "step": "S1 desaffecter",
+    "file": "s1-db-employe-desaffecte.png",
+    "table": "employe",
+    "rows": 1
+  },
+  {
+    "step": "S1 affecter",
+    "file": "s1-db-employe-affecte.png",
+    "table": "employe",
+    "rows": 1
+  },
+  {
+    "step": "S2 agence+vehicules",
+    "file": "s2-db-agence.png",
+    "table": "agence",
+    "rows": 3
+  },
+  {
+    "step": "S2 agence+vehicules",
+    "file": "s2-db-vehicule.png",
+    "table": "vehicule",
+    "rows": 3
+  },
+  {
+    "step": "S3 affecter equipement",
+    "file": "s3-db-equipements-affecte.png",
+    "table": "vehicule_equipements",
+    "rows": 1
+  },
+  {
+    "step": "S3 desaffecter equipement",
+    "file": "s3-db-equipements-desaffecte.png",
+    "table": "vehicule_equipements",
+    "rows": 0
+  }
+]

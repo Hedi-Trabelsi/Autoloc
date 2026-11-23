@@ -42,17 +42,17 @@ public class IEmployeServiceImp implements IEmployeService {
     }
 
     @Override
-    public Employe desaffecterAgence(Long idEmploye) {
-        Employe e = employeRepository.findById(idEmploye).get();
-        e.setAgence(null);
-        return employeRepository.save(e);
+    public Employe desaffecterEmploye(Long idEmploye) {
+        Employe employe = employeRepository.findById(idEmploye).get();
+        employe.setAgence(null);
+        return employeRepository.save(employe);
     }
 
     @Override
-    public Employe affectAgence(Long idEmploye, Long idAgence) {
-        Employe e = employeRepository.findById(idEmploye).get();
-        Agence a = agenceRepository.findById(idAgence).get();
-        e.setAgence(a);
-        return employeRepository.save(e);
+    public Employe affecterEmploye(Long idEmploye, Long idAgence) {
+        Employe employe = employeRepository.findById(idEmploye).get();
+        Agence agence = agenceRepository.findById(idAgence).get();
+        employe.setAgence(agence);
+        return employeRepository.save(employe);
     }
 }
