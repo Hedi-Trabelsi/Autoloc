@@ -30,9 +30,10 @@ public class Contrat {
     private BigDecimal montantTotal;
 
     @Column(nullable = false)
-    private boolean valide;
+    private Boolean valide;
 
     @OneToOne
+    @JoinColumn(name = "reservation_id")
     private Reservation reservation;
 
     @JsonIgnore

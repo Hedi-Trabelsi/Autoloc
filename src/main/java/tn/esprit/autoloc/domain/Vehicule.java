@@ -43,6 +43,8 @@ public class Vehicule {
     private StatutVehicule statut;
 
     @ManyToOne
+    @JoinColumn(name = "agence_id")
+    @JsonIgnore
     private Agence agence;
 
     @JsonIgnore
@@ -50,6 +52,11 @@ public class Vehicule {
     private List<Maintenance> maintenances;
 
     @ManyToMany
+    @JoinTable(
+            name = "vehicule_equipement",
+            joinColumns = @JoinColumn(name = "vehicule_id"),
+            inverseJoinColumns = @JoinColumn(name = "equipement_id")
+    )
     private List<Equipement> equipements;
 
     @JsonIgnore

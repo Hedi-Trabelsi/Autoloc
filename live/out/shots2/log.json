@@ -26,13 +26,13 @@
   {
     "step": "S3 affecter equipement",
     "file": "s3-db-equipements-affecte.png",
-    "table": "vehicule_equipements",
+    "table": "vehicule_equipement",
     "rows": 1
   },
   {
     "step": "S3 desaffecter equipement",
     "file": "s3-db-equipements-desaffecte.png",
-    "table": "vehicule_equipements",
+    "table": "vehicule_equipement",
     "rows": 0
   }
 ]

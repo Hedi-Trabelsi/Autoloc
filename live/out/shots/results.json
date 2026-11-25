@@ -17,7 +17,7 @@
           "adresse": "8 Rue de la Corniche",
           "telephone": "73221100"
         },
-        "response": "Response body\nDownload\n{\n \"idAgence\": 3,\n \"nom\": \"AutoLoc Sousse\",\n \"ville\": \"Sousse\",\n \"adresse\": \"8 Rue de la Corniche\",\n \"telephone\": \"73221100\"\n}\nResponse headers\n connection: keep-alive \n content-length: 110 \n content-type: application/json \n date: Mon,23 Nov 2026 19:24:56 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idAgence\": 3,\n \"nom\": \"AutoLoc Sousse\",\n \"ville\": \"Sousse\",\n \"adresse\": \"8 Rue de la Corniche\",\n \"telephone\": \"73221100\",\n \"vehicules\": null\n}\nResponse headers\n connection: keep-alive \n content-length: 127 \n content-type: application/json \n date: Wed,25 Nov 2026 21:16:42 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer toutes les agences",
@@ -27,7 +27,7 @@
         "method": "GET",
         "url": "http://localhost:8081/agences/getAllAgences",
         "request": null,
-        "response": "Response body\nDownload\n[\n {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"12 Avenue Habib Bourguiba\",\n \"telephone\": \"71234567\"\n },\n {\n \"idAgence\": 2,\n \"nom\": \"AutoLoc Ariana\",\n \"ville\": \"Ariana\",\n \"adresse\": \"5 Rue du Lac\",\n \"telephone\": \"71889900\"\n },\n {\n \"idAgence\": 3,\n \"nom\": \"AutoLoc Sousse\",\n \"ville\": \"Sousse\",\n \"adresse\": \"8 Rue de la Corniche\",\n \"telephone\": \"73221100\"\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 336 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:00 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n[\n {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"12 Avenue Habib Bourguiba\",\n \"telephone\": \"71234567\",\n \"vehicules\": [\n {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n }\n ]\n },\n {\n \"idAgence\": 2,\n \"nom\": \"AutoLoc Ariana\",\n \"ville\": \"Ariana\",\n \"adresse\": \"5 Rue du Lac\",\n \"telephone\": \"71889900\",\n \"vehicules\": [\n {\n \"idVehicule\": 2,\n \"immatriculation\": \"TN-201-TU-5678\",\n \"marque\": \"Hyundai\",\n \"modele\": \"Tucson\",\n \"categorie\": \"SUV\",\n \"tarifJournalier\": 180,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n }\n ]\n },\n {\n \"idAgence\": 3,\n \"nom\": \"AutoLoc Sousse\",\n \"ville\": \"Sousse\",\n \"adresse\": \"8 Rue de la Corniche\",\n \"telephone\": \"73221100\",\n \"vehicules\": []\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 725 \n content-type: application/json \n date: Wed,25 Nov 2026 21:16:46 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer une agence par identifiant",
@@ -37,7 +37,7 @@
         "method": "GET",
         "url": "http://localhost:8081/agences/recupererAgence/1",
         "request": null,
-        "response": "Response body\nDownload\n{\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"12 Avenue Habib Bourguiba\",\n \"telephone\": \"71234567\"\n}\nResponse headers\n connection: keep-alive \n content-length: 120 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:04 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"12 Avenue Habib Bourguiba\",\n \"telephone\": \"71234567\",\n \"vehicules\": [\n {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n }\n ]\n}\nResponse headers\n connection: keep-alive \n content-length: 309 \n content-type: application/json \n date: Wed,25 Nov 2026 21:16:50 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Modifier une agence",
@@ -53,7 +53,7 @@
           "adresse": "20 Avenue de la Liberte",
           "telephone": "71999999"
         },
-        "response": "Response body\nDownload\n{\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n}\nResponse headers\n connection: keep-alive \n content-length: 118 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:09 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\",\n \"vehicules\": [\n {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n }\n ]\n}\nResponse headers\n connection: keep-alive \n content-length: 307 \n content-type: application/json \n date: Wed,25 Nov 2026 21:16:55 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Supprimer une agence",
@@ -63,7 +63,7 @@
         "method": "DELETE",
         "url": "http://localhost:8081/agences/deleteAgenceById/3",
         "request": null,
-        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Mon,23 Nov 2026 19:25:13 GMT \n keep-alive: timeout=60"
+        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Wed,25 Nov 2026 21:16:59 GMT \n keep-alive: timeout=60"
       }
     ]
   },
@@ -87,7 +87,7 @@
           "numPermis": "TN-3344556",
           "dateInscription": "2026-11-23"
         },
-        "response": "Response body\nDownload\n{\n \"idClient\": 3,\n \"nom\": \"Gharbi\",\n \"prenom\": \"Yassine\",\n \"email\": \"yassine.gharbi@gmail.com\",\n \"telephone\": \"55443322\",\n \"numPermis\": \"TN-3344556\",\n \"dateInscription\": \"2026-11-23\"\n}\nResponse headers\n connection: keep-alive \n content-length: 162 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:18 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idClient\": 3,\n \"nom\": \"Gharbi\",\n \"prenom\": \"Yassine\",\n \"email\": \"yassine.gharbi@gmail.com\",\n \"telephone\": \"55443322\",\n \"numPermis\": \"TN-3344556\",\n \"dateInscription\": \"2026-11-23\"\n}\nResponse headers\n connection: keep-alive \n content-length: 162 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:04 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer tous les clients",
@@ -97,7 +97,7 @@
         "method": "GET",
         "url": "http://localhost:8081/clients/getAllClients",
         "request": null,
-        "response": "Response body\nDownload\n[\n {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98123456\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-04\"\n },\n {\n \"idClient\": 2,\n \"nom\": \"Trabelsi\",\n \"prenom\": \"Sarra\",\n \"email\": \"sarra.trabelsi@gmail.com\",\n \"telephone\": \"22334455\",\n \"numPermis\": \"TN-9988776\",\n \"dateInscription\": \"2026-11-11\"\n },\n {\n \"idClient\": 3,\n \"nom\": \"Gharbi\",\n \"prenom\": \"Yassine\",\n \"email\": \"yassine.gharbi@gmail.com\",\n \"telephone\": \"55443322\",\n \"numPermis\": \"TN-3344556\",\n \"dateInscription\": \"2026-11-23\"\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 491 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:21 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n[\n {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98123456\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-04\"\n },\n {\n \"idClient\": 2,\n \"nom\": \"Trabelsi\",\n \"prenom\": \"Sarra\",\n \"email\": \"sarra.trabelsi@gmail.com\",\n \"telephone\": \"22334455\",\n \"numPermis\": \"TN-9988776\",\n \"dateInscription\": \"2026-11-11\"\n },\n {\n \"idClient\": 3,\n \"nom\": \"Gharbi\",\n \"prenom\": \"Yassine\",\n \"email\": \"yassine.gharbi@gmail.com\",\n \"telephone\": \"55443322\",\n \"numPermis\": \"TN-3344556\",\n \"dateInscription\": \"2026-11-23\"\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 491 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:08 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer un client par identifiant",
@@ -107,7 +107,7 @@
         "method": "GET",
         "url": "http://localhost:8081/clients/recupererClient/1",
         "request": null,
-        "response": "Response body\nDownload\n{\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98123456\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-04\"\n}\nResponse headers\n connection: keep-alive \n content-length: 163 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:25 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98123456\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-04\"\n}\nResponse headers\n connection: keep-alive \n content-length: 163 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:12 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Modifier un client",
@@ -125,7 +125,7 @@
           "numPermis": "TN-1245789",
           "dateInscription": "2026-11-23"
         },
-        "response": "Response body\nDownload\n{\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n}\nResponse headers\n connection: keep-alive \n content-length: 163 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:30 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n}\nResponse headers\n connection: keep-alive \n content-length: 163 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:16 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Supprimer un client",
@@ -135,7 +135,7 @@
         "method": "DELETE",
         "url": "http://localhost:8081/clients/deleteClientById/3",
         "request": null,
-        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Mon,23 Nov 2026 19:25:34 GMT \n keep-alive: timeout=60"
+        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Wed,25 Nov 2026 21:17:21 GMT \n keep-alive: timeout=60"
       }
     ]
   },
@@ -157,12 +157,9 @@
           "modele": "208",
           "categorie": "CITADINE",
           "tarifJournalier": 88,
-          "statut": "DISPONIBLE",
-          "agence": {
-            "idAgence": 2
-          }
+          "statut": "DISPONIBLE"
         },
-        "response": "Response body\nDownload\n{\n \"idVehicule\": 3,\n \"immatriculation\": \"TN-401-SO-7788\",\n \"marque\": \"Peugeot\",\n \"modele\": \"208\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 88,\n \"statut\": \"DISPONIBLE\",\n \"agence\": {\n \"idAgence\": 2,\n \"nom\": null,\n \"ville\": null,\n \"adresse\": null,\n \"telephone\": null\n },\n \"equipements\": null\n}\nResponse headers\n connection: keep-alive \n content-length: 250 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:39 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idVehicule\": 3,\n \"immatriculation\": \"TN-401-SO-7788\",\n \"marque\": \"Peugeot\",\n \"modele\": \"208\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 88,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": null\n}\nResponse headers\n connection: keep-alive \n content-length: 170 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:25 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer tous les véhicules",
@@ -172,7 +169,7 @@
         "method": "GET",
         "url": "http://localhost:8081/vehicules/getAllVehicules",
         "request": null,
-        "response": "Response body\nDownload\n[\n {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n },\n {\n \"idVehicule\": 2,\n \"immatriculation\": \"TN-201-TU-5678\",\n \"marque\": \"Hyundai\",\n \"modele\": \"Tucson\",\n \"categorie\": \"SUV\",\n \"tarifJournalier\": 180,\n \"statut\": \"DISPONIBLE\",\n \"agence\": {\n \"idAgence\": 2,\n \"nom\": \"AutoLoc Ariana\",\n \"ville\": \"Ariana\",\n \"adresse\": \"5 Rue du Lac\",\n \"telephone\": \"71889900\"\n },\n \"equipements\": []\n },\n {\n \"idVehicule\": 3,\n \"immatriculation\": \"TN-401-SO-7788\",\n \"marque\": \"Peugeot\",\n \"modele\": \"208\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 88,\n \"statut\": \"DISPONIBLE\",\n \"agence\": {\n \"idAgence\": 2,\n \"nom\": \"AutoLoc Ariana\",\n \"ville\": \"Ariana\",\n \"adresse\": \"5 Rue du Lac\",\n \"telephone\": \"71889900\"\n },\n \"equipements\": []\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 871 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:43 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n[\n {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n },\n {\n \"idVehicule\": 2,\n \"immatriculation\": \"TN-201-TU-5678\",\n \"marque\": \"Hyundai\",\n \"modele\": \"Tucson\",\n \"categorie\": \"SUV\",\n \"tarifJournalier\": 180,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n },\n {\n \"idVehicule\": 3,\n \"immatriculation\": \"TN-401-SO-7788\",\n \"marque\": \"Peugeot\",\n \"modele\": \"208\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 88,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 519 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:29 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer un véhicule par identifiant",
@@ -182,7 +179,7 @@
         "method": "GET",
         "url": "http://localhost:8081/vehicules/recupererVehicule/1",
         "request": null,
-        "response": "Response body\nDownload\n{\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n}\nResponse headers\n connection: keep-alive \n content-length: 302 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:47 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 95.5,\n \"statut\": \"DISPONIBLE\",\n \"equipements\": []\n}\nResponse headers\n connection: keep-alive \n content-length: 174 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:34 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Modifier un véhicule",
@@ -198,12 +195,9 @@
           "modele": "Clio 5",
           "categorie": "CITADINE",
           "tarifJournalier": 110,
-          "statut": "LOUE",
-          "agence": {
-            "idAgence": 1
-          }
+          "statut": "LOUE"
         },
-        "response": "Response body\nDownload\n{\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n}\nResponse headers\n connection: keep-alive \n content-length: 294 \n content-type: application/json \n date: Mon,23 Nov 2026 19:25:53 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"equipements\": []\n}\nResponse headers\n connection: keep-alive \n content-length: 166 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:38 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Supprimer un véhicule",
@@ -213,7 +207,7 @@
         "method": "DELETE",
         "url": "http://localhost:8081/vehicules/deleteVehiculeById/3",
         "request": null,
-        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Mon,23 Nov 2026 19:25:58 GMT \n keep-alive: timeout=60"
+        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Wed,25 Nov 2026 21:17:42 GMT \n keep-alive: timeout=60"
       }
     ]
   },
@@ -237,7 +231,7 @@
             "idReservation": 1
           }
         },
-        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": null,\n \"dateFin\": null,\n \"statut\": null,\n \"client\": null,\n \"vehicule\": null\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 187 \n content-type: application/json \n date: Mon,23 Nov 2026 19:26:03 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": null,\n \"dateFin\": null,\n \"statut\": null,\n \"client\": null,\n \"vehicule\": null\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 187 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:47 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer tous les contrats",
@@ -247,7 +241,7 @@
         "method": "GET",
         "url": "http://localhost:8081/contrats/getAllContrats",
         "request": null,
-        "response": "Response body\nDownload\n[\n {\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n }\n }\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 667 \n content-type: application/json \n date: Mon,23 Nov 2026 19:26:08 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n[\n {\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"equipements\": []\n }\n }\n }\n]\nResponse headers\n connection: keep-alive \n content-length: 539 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:51 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Récupérer un contrat par identifiant",
@@ -257,7 +251,7 @@
         "method": "GET",
         "url": "http://localhost:8081/contrats/recupererContrat/1",
         "request": null,
-        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n }\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 665 \n content-type: application/json \n date: Mon,23 Nov 2026 19:26:12 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 264,\n \"valide\": true,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"equipements\": []\n }\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 537 \n content-type: application/json \n date: Wed,25 Nov 2026 21:17:56 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Modifier un contrat",
@@ -275,7 +269,7 @@
             "idReservation": 1
           }
         },
-        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 420.5,\n \"valide\": false,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"agence\": {\n \"idAgence\": 1,\n \"nom\": \"AutoLoc Tunis Centre\",\n \"ville\": \"Tunis\",\n \"adresse\": \"20 Avenue de la Liberte\",\n \"telephone\": \"71999999\"\n },\n \"equipements\": []\n }\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 665 \n content-type: application/json \n date: Mon,23 Nov 2026 19:26:17 GMT \n keep-alive: timeout=60"
+        "response": "Response body\nDownload\n{\n \"idContrat\": 1,\n \"dateSignature\": \"2026-11-23\",\n \"montantTotal\": 420.5,\n \"valide\": false,\n \"reservation\": {\n \"idReservation\": 1,\n \"dateDebut\": \"2026-11-25\",\n \"dateFin\": \"2026-11-28\",\n \"statut\": \"CONFIRMEE\",\n \"client\": {\n \"idClient\": 1,\n \"nom\": \"Ben Ali\",\n \"prenom\": \"Mohamed\",\n \"email\": \"mohamed.benali@gmail.com\",\n \"telephone\": \"98999888\",\n \"numPermis\": \"TN-1245789\",\n \"dateInscription\": \"2026-11-23\"\n },\n \"vehicule\": {\n \"idVehicule\": 1,\n \"immatriculation\": \"TN-201-TU-1234\",\n \"marque\": \"Renault\",\n \"modele\": \"Clio 5\",\n \"categorie\": \"CITADINE\",\n \"tarifJournalier\": 110,\n \"statut\": \"LOUE\",\n \"equipements\": []\n }\n }\n}\nResponse headers\n connection: keep-alive \n content-length: 537 \n content-type: application/json \n date: Wed,25 Nov 2026 21:18:00 GMT \n keep-alive: timeout=60"
       },
       {
         "title": "Supprimer un contrat",
@@ -285,7 +279,7 @@
         "method": "DELETE",
         "url": "http://localhost:8081/contrats/deleteContratById/1",
         "request": null,
-        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Mon,23 Nov 2026 19:26:21 GMT \n keep-alive: timeout=60"
+        "response": "Response headers\n connection: keep-alive \n content-length: 0 \n date: Wed,25 Nov 2026 21:18:04 GMT \n keep-alive: timeout=60"
       }
     ]
   }
